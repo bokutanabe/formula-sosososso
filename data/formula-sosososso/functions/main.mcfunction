@@ -71,5 +71,8 @@ execute at @e[name=fs-car] run data modify entity @e[name=fs-rear-tire2,sort=nea
 execute at @e[name=fs-car] run tp @e[name=fs-rear-wing1,sort=nearest,limit=1] ^0.5 ^0.9 ^-3.0
 execute at @e[name=fs-car] run tp @e[name=fs-rear-wing2,sort=nearest,limit=1] ^-0.5 ^0.9 ^-3.0
 
-# execute at @e[name=fs-car] run data modify entity @e[name=fs-rear-wing1,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
-# execute at @e[name=fs-car] run data modify entity @e[name=fs-rear-wing2,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
+execute at @e[name=fs-car] run data modify entity @e[name=fs-rear-wing1,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]  
+execute at @e[name=fs-car] run data modify entity @e[name=fs-rear-wing2,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
+
+execute at @e[name=fs-car] at @e[name=fs-rear-wing1,sort=nearest,limit=1] run tp @e[name=fs-rear-wing1,sort=nearest,limit=1] ~ ~ ~ ~90 ~
+execute at @e[name=fs-car] at @e[name=fs-rear-wing2,sort=nearest,limit=1] run tp @e[name=fs-rear-wing2,sort=nearest,limit=1] ~ ~ ~ ~-90 ~
