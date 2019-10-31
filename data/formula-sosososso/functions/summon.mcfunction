@@ -1,5 +1,5 @@
 # engine
-summon minecraft:horse ~ ~ ~ {NoAI:1b,Tame:1b,CustomName:"\"fs-engine\"",SaddleItem:{id:"minecraft:saddle",Count:1b},ActiveEffects:[{Duration:999999,Id:14}]}
+summon minecraft:horse ~ ~ ~ {NoAI:1b,Tame:1b,CustomName:"\"fs-engine\"",SaddleItem:{id:"minecraft:saddle",Count:1b},ActiveEffects:[{Duration:999999,Id:14}],Attributes:[{Base:2.4d,Name:"generic.movementSpeed"}]}
 summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,CustomName:"\"fs-car\""}
 
 # front-wing
