@@ -1,5 +1,6 @@
 # setting
 effect give @p minecraft:invisibility 1 1 true
+playsound minecraft:entity.turtle.death block @p ~ ~ ~ 0.2 0.3
 
 # engine
 execute at @e[name=fs-engine] run tp @e[name=fs-car,sort=nearest,limit=1] ~ ~-1.4 ~
@@ -46,9 +47,11 @@ execute at @e[name=fs-car] run data modify entity @e[name=fs-side-pods5,sort=nea
 execute at @e[name=fs-car] run data modify entity @e[name=fs-side-pods6,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
 
 # seat
-execute at @e[name=fs-car] run tp @e[name=fs-seat1,sort=nearest,limit=1] ^ ^ ^-0.6
+execute at @e[name=fs-car] run tp @e[name=fs-seat1,sort=nearest,limit=1] ^ ^ ^
+execute at @e[name=fs-car] run tp @e[name=fs-seat2,sort=nearest,limit=1] ^ ^ ^-0.6
 
 execute at @e[name=fs-car] run data modify entity @e[name=fs-seat1,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
+execute at @e[name=fs-car] run data modify entity @e[name=fs-seat2,sort=nearest,limit=1] Rotation[0] set from entity @e[name=fs-car,sort=nearest,limit=1] Rotation[0]
 
 # engine-cover
 execute at @e[name=fs-car] run tp @e[name=fs-engine-cover1,sort=nearest,limit=1] ^ ^0.6 ^-1.2
